@@ -1,4 +1,4 @@
-# Local Events App
+# React + Redux Architecture
 
 This repository exists to showcase a scalable React + Redux architecture.
 
