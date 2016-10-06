@@ -4,7 +4,7 @@ import h from 'react-hyperscript';
 import app from './features/app';
 import shared from './features/shared';
 import store from './store';
-import './resets.scss';
+import './styles/index.scss';
 
 const { App } = app.components;
 
