@@ -1,0 +1,19 @@
+$topbar__height: 48px;
+$topbar__padding: 16px;
+$topbar__background-color: #333;
+$topbar__text__color: white;
+$topbar__text__font-size: 18px;
+
+.topbar {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: $topbar__height;
+  padding-left: $topbar__padding;
+  padding-right: $topbar__padding;
+  background-color: $topbar__background-color;
+  &__text {
+    color: $topbar__text__color;
+    font-size: $topbar__text__font-size;
+  }
+}

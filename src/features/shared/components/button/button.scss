@@ -1,0 +1,24 @@
+$button__border-radius: 2px;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  background-color: #666;
+  border-radius: $button__border-radius;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
+  &:hover {
+    background-color: #555;
+  }
+}

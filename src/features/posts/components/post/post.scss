@@ -1,0 +1,28 @@
+$post__height: 48px;
+$post__background-color: #555;
+$post__title__padding: 16px;
+$post__title__padding-bottom: 8px;
+$post__title__color: white;
+$post__body__padding: 16px;
+$post__body__color: white;
+
+.post {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: $post__height;
+  background-color: $post__background-color;
+  cursor: pointer;
+  &__text {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: $post__body__padding;
+    padding-right: $post__body__padding;
+    color: $post__body__color;
+    overflow: hidden;
+  }
+  &:hover {
+    background-color: #666;
+  }
+}
