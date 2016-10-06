@@ -14,4 +14,4 @@ This repository exists to showcase a scalable React + Redux architecture.
 * Enter the command: `npm start`
 
 ## Running the tests
-* To run the tests, enter the command: `npm run test:watch`
+* Enter the command: `npm run test:watch`
