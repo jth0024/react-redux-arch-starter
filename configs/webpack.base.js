@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const autoprefixer = require('autoprefixer');
+const babelConfig = require('./babelrc.js');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -39,9 +40,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'stage-2'],
-        },
+        query: babelConfig,
       },
     ],
   },

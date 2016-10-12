@@ -1,3 +1,5 @@
+const babelConfig = require('./babelrc.js');
+
 module.exports = (config) => {
   config.set({
     browsers: ['PhantomJS'],
@@ -17,9 +19,7 @@ module.exports = (config) => {
             test: /\.js$/,
             loader: 'babel',
             exclude: /node_modules/,
-            query: {
-              presets: ['es2015', 'stage-2'],
-            },
+            query: babelConfig,
           },
           {
             test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
